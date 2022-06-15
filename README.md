@@ -1,4 +1,4 @@
-## build instructions
+## build & run instructions
 ```
 $ cd camcap
 $ mkdir build
