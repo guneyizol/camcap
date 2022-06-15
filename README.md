@@ -1,3 +1,5 @@
+**requires opencv and cmake**
+
 ## build & run instructions
 ```
 $ cd camcap
