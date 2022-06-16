@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 project(CamCap)
 find_package(OpenCV REQUIRED)
+find_package(cppzmq)
 include_directories(${OpenCV_INCLUDE_DIRS})
 add_executable(CamCap CamCap.cpp)
-target_link_libraries(CamCap ${OpenCV_LIBS})
+target_link_libraries(CamCap ${OpenCV_LIBS} cppzmq)
