@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.20)
+project(PrintToScreen)
+find_package(OpenCV REQUIRED)
+find_package(cppzmq)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(PrintToScreen PrintToScreen.cpp)
+target_link_libraries(PrintToScreen ${OpenCV_LIBS} cppzmq)
